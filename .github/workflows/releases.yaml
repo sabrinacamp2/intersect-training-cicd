@@ -23,10 +23,10 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/download-artifact
+      - uses: actions/download-artifact@v3
         with:
           name: "build-artifact"
           path: dist
 
       - name: Publish release
-        run: echo "Uploading!"
+        run: echo "Uploading!"@v3
